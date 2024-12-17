@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Store</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4b400;
+        }
+
+        header {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 60vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+        }
+
+        .section {
+            padding: 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        /* Bikes Gallery */
+        .bikes {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .bike {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .bike img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .bike h3 {
+            margin: 0.5rem 0;
+            color: #555;
+        }
+
+        .bike p {
+            padding: 0.5rem 1rem;
+            color: #777;
+        }
+
+        .bike a {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        .bike a:hover {
+            background: #f4b400;
+        }
+
+        /* Contact Section */
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            font-weight: bold;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .contact button {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 0.7rem 2rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        .contact button:hover {
+            background: #f4b400;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Bike Store</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bikes">Bikes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Welcome to the Bike Store</h1>
+    </header>
+
+    <!-- Bikes Section -->
+    <section id="bikes" class="section">
+        <h2>Our Bikes</h2>
+        <div class="bikes">
+            <div class="bike">
+                <img src="https://via.placeholder.com/300x200" alt="Bike 1">
+                <h3>Mountain Bike</h3>
+                <p>Perfect for off-road adventures.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="bike">
+                <img src="https://via.placeholder.com/300x200" alt="Bike 2">
+                <h3>Road Bike</h3>
+                <p>Built for speed and comfort.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="bike">
+                <img src="https://via.placeholder.com/300x200" alt="Bike 3">
+                <h3>Electric Bike</h3>
+                <p>Effortless rides every time.</p>
+                <a href="#">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Bike Store. All rights reserved.
+    </footer>
+</body>
+</html>
